@@ -269,19 +269,20 @@ header {
 .category p {
     font-size: 0.85rem;
 }
+
 /* ------------------categories------------------------ */
 
 /* +++++++++++++++++++++++courses+++++++++++++++++++++++++++++ */
 
-.courses{
-    /* margin: 10rem; */
-}
-.courses__container{
+
+
+.courses__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-.course{
+
+.course {
     background: var(--color-bg1);
     text-align: center;
     border: 1px solid transparent;
@@ -289,27 +290,118 @@ header {
     border-radius: 20px;
     overflow: hidden;
 }
+
 /* .course__image{
     margin: 2px;
     padding: 5px;
 } */
-.course:hover{
+.course:hover {
     background: transparent;
     border-color: var(--color-primary);
 
 }
-.course__info{
+
+.course__info {
     padding: 2rem;
 }
-.course__info p{
+
+.course__info p {
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
 }
+
 /* ----------------------courses------------------ */
 
 
 /* ++++++++++++++++++++++++++FAQs+++++++++++++++++++++ */
 
-.faqs{
+.faqs {
     background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    background: var(--color-primary);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display:none;
+}
+
+.faq.open p {
+    display: block;
+}
+
+/* -----------------------FAQ----------------------------- */
+
+
+/* ++++++++++++++++++++++++Testimonial+++++++++++++++++++++ */
+.testimonial__container{
+    overflow-x: hidden;
+    position: relative;
+    margin: 5rem; 
+}
+.testimonials{
+    overflow-x: scroll;
+}
+.testimonials::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+}
+
+.testimonial{
+    padding-top: 2rem;
+}
+.avatar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-bg1);
+}
+.testimonial__info{
+    text-align: center;
+}
+.testimonial__body{
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+.testimonial__body::before{
+    content: "";
+    display: block;
+    background: linear-gradient(135deg,transparent,var(--color-primary),var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+
