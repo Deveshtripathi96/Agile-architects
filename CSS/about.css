@@ -50,3 +50,62 @@
 .achievement__card > p{
     margin-top: 1rem;
 }
+
+/* -------------------Achievements----------------------- */
+
+
+/* ++++++++++++++++++++++Teachers++++++++++++++++++++++++++++ */
+
+.teachers{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.teachers__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.teacher{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+.teacher:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+.teacher-image img{
+    filter: saturate(0);
+}
+.teacher:hover img{
+    filter: saturate(1);
+}
+.teacher-info{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.teacher-info p{
+    color: var(--color-light);
+}
+.teacher-socials{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+.teacher-socials a{
+    padding: 0.6rem;
+}
+.teacher:hover .teacher-socials{
+    right: 0;
+}
