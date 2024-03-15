@@ -2,7 +2,7 @@
 window.addEventListener("scroll", () => {
   document
     .querySelector("nav")
-    .classList.toggle("window-scroll", window.scrollY > 300);
+    .classList.toggle("window-scroll", window.scrollY > 100);
 });
 
 //show or hide FAQs

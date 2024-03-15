@@ -324,6 +324,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    
 }
 
 .faq {
@@ -334,6 +335,7 @@ header {
     gap: 1.4rem;
     height: fit-content;
     cursor: pointer;
+    
 }
 
 .faq h4 {
