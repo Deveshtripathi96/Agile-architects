@@ -5,10 +5,16 @@
     box-sizing: border-box;
 
 }
-.container{
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: var(--color-bg1);
+    background-image: url("./../Images/bg-texture.png");
+}
+.login__container{
     width:100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('login back.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -16,7 +22,7 @@
     align-items: center;
 }
 .Form-box{
-    background-color:rgba(22, 87, 161, 0.361);
+    background-color:var(--color-bg2);
     width: 90%;
     max-width: 450px;
     min-width: 350px;
@@ -39,7 +45,7 @@
     transition: transform .5s;
 }
 .Input-field{
-    background: #eaeaea;
+    background:var(--color-bg1);
     margin: 15px 0;
     border-radius: 10px;
     display: flex;
@@ -78,10 +84,10 @@ form p  a{
 }
 .btn-grp button{
     flex-basis: 48%;
-    background: black;
+    background: var(--color-success);
     border-radius: 20px;
     height: 40px;
-    color: white;
+    color: var(--color-);
     border:0;
     outline:0;
     cursor: pointer;
@@ -91,6 +97,6 @@ form p  a{
     height:280px;
 }
 button.disable{
-    background: #eaeaea;
+    background: var(--color-bg);
     color: #555;
 }
