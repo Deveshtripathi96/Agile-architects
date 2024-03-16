@@ -33,12 +33,12 @@ body {
 }
 .Form-box h1{
     font-size: 30px;
-    color: black;
+    color:var(--color-white);
 }
 .Form-box .underline{
     width: 40px;
     height: 4px;
-    background-color: black;
+    background-color: var(--color-white);
     margin: 10px auto 50px auto;
     border-radius: 5px;
 
@@ -62,6 +62,7 @@ body {
     border:0;
     outline: 0;
     padding: 18px 15px;
+    color: var(--color-white);
 }
 i{
     margin: 15px;
@@ -87,7 +88,7 @@ form p  a{
     background: var(--color-success);
     border-radius: 20px;
     height: 40px;
-    color: var(--color-);
+    color: var(--color-white);
     border:0;
     outline:0;
     cursor: pointer;
